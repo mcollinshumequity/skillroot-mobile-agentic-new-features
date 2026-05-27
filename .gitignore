@@ -14,18 +14,65 @@ desktop.ini
 !.vscode/extensions.json
 *.swp
 
+# ============================================================
+# SECRETS & CREDENTIALS — never commit these
+# ============================================================
+
+# Environment variable files (all subdirectories)
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Google Cloud / Firebase service account JSON keys
+# Pattern matches any file with a GCP-style project ID in the name
+*-[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].json
+# Explicit known key files
+humequity-idp-34d21aedb5e5.json
+**/humequity-idp-*.json
+# Broad safety net: any file named "service-account*.json" or "credentials*.json"
+service-account*.json
+**/service-account*.json
+credentials*.json
+**/credentials*.json
+secrets*.json
+**/secrets*.json
+
+# Firebase / Google Services config (Android & iOS)
+google-services.json
+**/google-services.json
+GoogleService-Info.plist
+**/GoogleService-Info.plist
+
+# Android signing keystores & key properties
+*.keystore
+*.jks
+**/key.properties
+/mobile/android/key.properties
+/mobile/android/**/*.apk
+/mobile/android/**/*.aab
+
+# iOS certificates & provisioning profiles
+*.p12
+*.pem
+*.cer
+*.mobileprovision
+*.provisionprofile
+
+# ============================================================
 # Node.js (api_portal & helper)
+# ============================================================
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 coverage/
-humequity-idp-34d21aedb5e5.json
-.env
-.env.*
-!.env.example
 
+# ============================================================
 # Flutter / Dart (mobile)
+# ============================================================
 .dart_tool/
 .packages
 .pub-cache/
@@ -33,13 +80,7 @@ humequity-idp-34d21aedb5e5.json
 build/
 *.log
 
-# Mobile - Android
-/mobile/android/key.properties
-/mobile/android/**/*.apk
-/mobile/android/**/*.aab
-/mobile/android/app/src/main/google-services.json
-
-# Mobile - iOS
+# Mobile - iOS (generated / build artefacts)
 /mobile/ios/Runner/GeneratedPluginRegistrant.*
 /mobile/ios/Flutter/App.framework
 /mobile/ios/Flutter/Flutter.framework
@@ -51,7 +92,6 @@ build/
 /mobile/ios/Flutter/flutter_export_environment.sh
 /mobile/ios/Pods/
 /mobile/ios/.symlinks/
-/mobile/ios/Runner/GoogleService-Info.plist
 
 # Firebase
 .firebase/

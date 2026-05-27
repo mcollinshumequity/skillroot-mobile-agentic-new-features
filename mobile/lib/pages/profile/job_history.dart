@@ -10,7 +10,6 @@ import 'package:skillroot/tab_screen.dart';
 import 'package:skillroot/services/provider.dart';
 
 import 'package:skillroot/models/job.dart';
-import 'package:skillroot/models/achievement.dart';
 
 import 'package:skillroot/pages/job/view.dart';
 import 'package:skillroot/pages/job/edit.dart';
@@ -63,8 +62,12 @@ class _JobHistoryState extends State<JobHistory>
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         List<Job> jobs = snapshot.data ?? [];
         final active = jobs.where((j) => j.endDate == null).length;
-        final training = jobs.where((j) => j.verification == JobVerificationStatus.Pending).length;
-        final verified = jobs.where((j) => j.verification == JobVerificationStatus.Verified).length;
+        final training = jobs
+            .where((j) => j.verification == JobVerificationStatus.Pending)
+            .length;
+        final verified = jobs
+            .where((j) => j.verification == JobVerificationStatus.Verified)
+            .length;
 
         return buildAnimatedScaffold(
           context: context,
