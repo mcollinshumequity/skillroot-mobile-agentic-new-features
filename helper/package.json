@@ -1,0 +1,14 @@
+{
+  "name": "skillroot-helpers",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Helper scripts for SkillROOT maintenance",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "firebase-admin": "^12.0.0",
+    "mysql2": "^3.9.2"
+  },
+  "devDependencies": {
+    "@google/design.md": "^0.1.1"
+  }
+}

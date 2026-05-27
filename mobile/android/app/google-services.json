@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "207161186689",
+    "project_id": "humequity-idp",
+    "storage_bucket": "humequity-idp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207161186689:android:fd304b2158482bce257080",
+        "android_client_info": {
+          "package_name": "com.humequity.passport"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_dbFj2ZbG_5WCeiBOh8jS5g7oQMZd5nM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207161186689:android:97a4b07cfcd38b3c257080",
+        "android_client_info": {
+          "package_name": "com.technicate.skillroot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_dbFj2ZbG_5WCeiBOh8jS5g7oQMZd5nM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

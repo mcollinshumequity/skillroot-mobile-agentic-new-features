@@ -1,0 +1,6 @@
+- [x] Update Job model to use startDate and optional endDate, remove date field.
+- [x] Refactor mock job data to use new fields.
+- [x] Update all UI widgets (JobHistoryPane, job edit/view pages, mockup list, profile pages) to display start-end date range.
+- [x] Adjust validation logic for dates in edit pages.
+- [x] Ensure provider and API serialization handle new fields.
+- [x] Verify app builds without errors.

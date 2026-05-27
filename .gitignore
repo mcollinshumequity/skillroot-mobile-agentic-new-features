@@ -1,0 +1,58 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs & Editors
+.idea/
+*.iml
+*.iws
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+
+# Node.js (api_portal & helper)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+humequity-idp-34d21aedb5e5.json
+.env
+.env.*
+!.env.example
+
+# Flutter / Dart (mobile)
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+*.log
+
+# Mobile - Android
+/mobile/android/key.properties
+/mobile/android/**/*.apk
+/mobile/android/**/*.aab
+/mobile/android/app/src/main/google-services.json
+
+# Mobile - iOS
+/mobile/ios/Runner/GeneratedPluginRegistrant.*
+/mobile/ios/Flutter/App.framework
+/mobile/ios/Flutter/Flutter.framework
+/mobile/ios/Flutter/Flutter.podspec
+/mobile/ios/Flutter/Generated.xcconfig
+/mobile/ios/Flutter/app.flx
+/mobile/ios/Flutter/app.zip
+/mobile/ios/Flutter/flutter_assets/
+/mobile/ios/Flutter/flutter_export_environment.sh
+/mobile/ios/Pods/
+/mobile/ios/.symlinks/
+/mobile/ios/Runner/GoogleService-Info.plist
+
+# Firebase
+.firebase/
+firebase-debug.log
